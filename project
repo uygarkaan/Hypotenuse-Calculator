@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+/**
+ * This GPA calculator was created by @uygarcode.
+ * You can find more projects and tutorials at https://github.com/uygarkaan
+ */
+ 
+public class hypotenuseCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of side A: ");
+        int sideA = scanner.nextInt();
+
+        System.out.print("Enter the length of side B: ");
+        int sideB = scanner.nextInt();
+
+        int sideASquared = sideA * sideA;
+        int sideBSquared = sideB * sideB;
+
+        int hypotenuseSquared = sideASquared + sideBSquared;
+
+        System.out.println("The square of the hypotenuse is: " + hypotenuseSquared);
+
+        scanner.close();
+    }
+}
